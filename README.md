@@ -1,4 +1,4 @@
-# FlappyBotIA
+# FlappyBotAI
 This is the first code that I wrote, so, probably has a lot of mistakes and no usual (dumb) way to do things. 
 I know that, but anyway I have to put this online to save my progress. In the future, I hope to look at this and see how bad 
 I was and how much I got better. 
