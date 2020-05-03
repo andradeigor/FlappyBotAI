@@ -25,8 +25,8 @@ ANALISE DE IMAGENS
 """
 
 def pipes(screen):#encontra, pela técnica de template matching os canos.
-    temp_bot = cv2.imread('Temp/cano_bot.jpg',0)
-    temp_top = cv2.imread('Temp/cano_top.jpg',0)
+    temp_bot = cv2.imread('template/cano_bot.jpg',0)
+    temp_top = cv2.imread('template/cano_top.jpg',0)
     x, y = temp_bot.shape[::-1]
     screen_gray = cv2.cvtColor(screen, cv2.COLOR_BGR2GRAY )
     res_bot = cv2.matchTemplate(screen_gray,temp_bot,cv2.TM_CCOEFF_NORMED)
@@ -70,7 +70,7 @@ def process(screen,pipes,bird):
 
 def Game(screen):
     game = True
-    temp_game = cv2.imread('Temp/gameover.png',0)
+    temp_game = cv2.imread('template/gameover.png',0)
     x, y = temp_game.shape[::-1]
     screen_gray = cv2.cvtColor(screen, cv2.COLOR_BGR2GRAY)
     res_bot = cv2.matchTemplate(screen_gray,temp_game,cv2.TM_CCOEFF_NORMED)
